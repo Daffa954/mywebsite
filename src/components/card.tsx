@@ -9,7 +9,7 @@ export function Card({
   title: string;
   description: string;
   children: React.ReactNode;
-    url?: string;
+  url?: string;
 }) {
   return (
     <div className="w-[320px]  bg-white border border-gray-200 rounded-lg shadow-sm ">

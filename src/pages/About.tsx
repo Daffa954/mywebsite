@@ -110,7 +110,7 @@ export function About() {
                     className="bg-gray-600 p-4 rounded-lg shadow-2xl"
                   >
                     <h3 className="text-xl font-semibold">{exp.title}</h3>
-                    <p className="text-sm text-gray-300">{exp.duration}</p>
+                    <p className="text-lg text-gray-300">{exp.duration}</p>
                     <p className="mt-2 text-lg">{exp.description}</p>
                   </li>
                 ))}
