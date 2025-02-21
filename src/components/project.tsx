@@ -12,7 +12,7 @@ export function Project({
   url?: string;
 }) {
   return (
-    <div className="w-full md:w-1/2">
+    <div className="w-full md:w-[45%]">
               <div className="bg-white rounded-lg shadow-lg ">
                 {/* <img
                   className="rounded-t-lg h-[270px] w-full"
