@@ -1,8 +1,7 @@
 import Navbar from "../components/navbar";
 import myphoto from "../assets/myphoto.jpg";
 import { useEffect } from "react";
-import Footer from "../components/footer";
-
+import FooterWeb from "../components/footer";
 export function About() {
   useEffect(() => {
     document.title = "About Me";
@@ -10,7 +9,7 @@ export function About() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#cbcbcb] text-[#373F51]">
+      <div className="min-h-screen bg-[#e6e6e6] text-[#373F51]">
         <Navbar />
         <main className="container mx-auto py-12 px-6 md:px-16 lg:px-24">
           <h1 className="text-5xl font-extrabold text-center mb-12">
@@ -21,10 +20,10 @@ export function About() {
             <img
               src={myphoto}
               alt="Profile Picture"
-              className="w-64 md:w-80 lg:w-96 rounded-full shadow-xl border-4 border-gray-300"
+              className="md:size-[400px] size-[300px] rounded-full shadow-xl border-4 border-gray-300"
             />
 
-            <div className="text-3xl font-medium space-y-4">
+            <div className="md:text-3xl text-xl font-medium space-y-4">
               <p>
                 <span className="font-bold">Name:</span> Daffa Khoirul Faiz
               </p>
@@ -118,7 +117,7 @@ export function About() {
             </div>
           </section>
         </main>
-        <Footer />
+        <FooterWeb/>
       </div>
     </>
   );

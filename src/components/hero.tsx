@@ -1,69 +1,126 @@
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import myphoto from "../assets/foto2.webp";
+import { Link } from "react-router-dom";
 
-const stats = [
-  { name: "Websites Created", value: "3" },
-  { name: "Android Apps Created", value: "1" },
-  { name: "Programming Language", value: "4" },
-  { name: "Certification", value: "5" },
-];
-import hero from '../assets/hero.png';
 export default function Hero() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-      <img
-        alt=""
-        src={hero}
-        className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center"
-      />
-      <div
-        aria-hidden="true"
-        className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-      >
-        <div
-          style={{
-            clipPath:
-              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-          }}
-          className="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-        />
-      </div>
-      <div
-        aria-hidden="true"
-        className="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-      >
-        <div
-          style={{
-            clipPath:
-              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-          }}
-          className="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-        />
-      </div>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
-           Daffa Khoirul Faiz
-          </h2>
-          <p className="mt-8 text-2xl font-medium text-pretty text-[#f6f6f6] sm:text-xl/8">
-             Full Stack Website and Android Developer
-          </p>
-          <p className="text-2xl font-medium text-pretty text-[#f6f6f6] sm:text-xl/8">
-          🚀 Building Scalable & Efficient Applications with Modern Technologies
-          </p>
-        </div>
-        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-         
-          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.name} className="flex flex-col-reverse gap-1">
-                <dt className="text-base/7 text-gray-300">{stat.name}</dt>
-                <dd className="text-4xl font-semibold tracking-tight text-white">
-                  {stat.value}
-                </dd>
+    <section className="relative min-h-[95vh] px-2 py-4 flex items-center justify-center overflow-hidden bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIiIvPjwvZz48L2c+PC9zdmc+')] opacity-20 dark:opacity-10"></div>
+      
+      {/* Content */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="text-left">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Hello, I'm{" "}
+              <span className="bg-gradient-to-r from-blue-200 to-white bg-clip-text text-transparent">
+                Daffa Khoirul Faiz
+              </span>
+            </h1>
+            
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-100 dark:text-gray-200 mb-6">
+              Full Stack Web Developer
+            </h2>
+            
+            <p className="text-lg md:text-xl text-blue-100 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
+              I create beautiful, functional, and user-friendly web applications 
+              using modern technologies like React, TypeScript, and Node.js. 
+              Passionate about turning ideas into digital reality.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                to="/myprojects"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-blue-900 dark:text-gray-900 bg-white dark:bg-gray-100 rounded-lg hover:bg-blue-50 dark:hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                View My Work
+                <ArrowRightIcon className="w-5 h-5 ml-2" />
+              </Link>
+              
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white dark:text-gray-100 border-2 border-white/50 dark:border-gray-300/50 rounded-lg hover:bg-white/10 dark:hover:bg-gray-300/10 transition-all duration-300 backdrop-blur-sm"
+              >
+                Get In Touch
+              </a>
+            </div>
+            
+            {/* Stats */}
+            <div className="flex flex-wrap gap-6 mt-12 pt-8 border-t border-white/20 dark:border-gray-600/50">
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-bold text-white dark:text-gray-100">10+</div>
+                <div className="text-blue-200 dark:text-gray-400 text-sm">Projects Completed</div>
               </div>
-            ))}
-          </dl>
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-bold text-white dark:text-gray-100">2+</div>
+                <div className="text-blue-200 dark:text-gray-400 text-sm">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl md:text-3xl font-bold text-white dark:text-gray-100">5+</div>
+                <div className="text-blue-200 dark:text-gray-400 text-sm">Technologies</div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Image/Illustration */}
+          <div className="relative">
+            <div className="relative mx-auto mb-36 w-80 h-80 lg:w-96 lg:h-96">
+              {/* Main Circle */}
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 dark:from-gray-400/10 dark:to-gray-400/5 rounded-full backdrop-blur-sm border border-white/20 dark:border-gray-400/20 shadow-2xl"></div>
+              
+              {/* Floating Elements */}
+              <div className="absolute top-10 -left-4 w-20 h-20 bg-blue-300/20 dark:bg-blue-400/10 rounded-2xl rotate-12 animate-float"></div>
+              <div className="absolute bottom-16 -right-4 w-16 h-16 bg-blue-400/30 dark:bg-blue-500/20 rounded-full animate-float-delayed"></div>
+              <div className="absolute top-1/2 -right-8 w-12 h-12 bg-white/10 dark:bg-gray-400/10 rounded-lg rotate-45 animate-float-slow"></div>
+              
+              {/* Profile Photo */}
+              <div className="absolute inset-8 flex items-center justify-center">
+                <img 
+                  src={myphoto} 
+                  alt="Daffa Khoirul Faiz" 
+                  className="w-48 h-48 rounded-full object-cover shadow-2xl border-4 border-white/20 dark:border-gray-400/20"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 dark:border-gray-300/50 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/70 dark:bg-gray-300/70 rounded-full mt-2"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* CSS Animations */}
+      <style>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        @keyframes float-delayed {
+          0%, 100% { transform: translateY(0px) scale(1); }
+          50% { transform: translateY(-15px) scale(1.05); }
+        }
+        @keyframes float-slow {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-10px) rotate(10deg); }
+        }
+        .animate-float {
+          animation: float 6s ease-in-out infinite;
+        }
+        .animate-float-delayed {
+          animation: float-delayed 8s ease-in-out infinite;
+        }
+        .animate-float-slow {
+          animation: float-slow 10s ease-in-out infinite;
+        }
+      `}</style>
+    </section>
   );
 }
