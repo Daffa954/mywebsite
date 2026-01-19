@@ -1,18 +1,18 @@
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import myphoto from "../assets/foto2.webp";
+import myphoto from "../assets/fotoku2.jpeg";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[95vh] px-2 py-4 flex items-center justify-center overflow-hidden bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
+    <section className="relative min-h-[100vh] md:px-2 md:py-4 px-4 py-24 flex items-center justify-center overflow-hidden bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIiIvPjwvZz48L2c+PC9zdmc+')] opacity-20 dark:opacity-10"></div>
       
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 ">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="text-left">
+          <div className="text-left ">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Hello, I'm{" "}
               <span className="bg-gradient-to-r from-blue-200 to-white bg-clip-text text-transparent">
@@ -21,13 +21,11 @@ export default function Hero() {
             </h1>
             
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-100 dark:text-gray-200 mb-6">
-              Full Stack Web Developer
+              3rd Year Informatics Student | Web Developer
             </h2>
             
             <p className="text-lg md:text-xl text-blue-100 dark:text-gray-300 mb-8 leading-relaxed max-w-2xl">
-              I create beautiful, functional, and user-friendly web applications 
-              using modern technologies like React, TypeScript, and Node.js. 
-              Passionate about turning ideas into digital reality.
+             Code. Study. Deliver. Ready to Create Impactful Digital Solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -66,9 +64,8 @@ export default function Hero() {
           
           {/* Image/Illustration */}
           <div className="relative">
-            <div className="relative mx-auto mb-36 w-80 h-80 lg:w-96 lg:h-96">
+            <div className="relative mx-auto mr-10  mt-12 mb-36 w-[350px] h-[470px] ">
               {/* Main Circle */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 dark:from-gray-400/10 dark:to-gray-400/5 rounded-full backdrop-blur-sm border border-white/20 dark:border-gray-400/20 shadow-2xl"></div>
               
               {/* Floating Elements */}
               <div className="absolute top-10 -left-4 w-20 h-20 bg-blue-300/20 dark:bg-blue-400/10 rounded-2xl rotate-12 animate-float"></div>
@@ -76,11 +73,11 @@ export default function Hero() {
               <div className="absolute top-1/2 -right-8 w-12 h-12 bg-white/10 dark:bg-gray-400/10 rounded-lg rotate-45 animate-float-slow"></div>
               
               {/* Profile Photo */}
-              <div className="absolute inset-8 flex items-center justify-center">
+              <div className="absolute inset-1 flex items-center justify-center">
                 <img 
                   src={myphoto} 
                   alt="Daffa Khoirul Faiz" 
-                  className="w-48 h-48 rounded-full object-cover shadow-2xl border-4 border-white/20 dark:border-gray-400/20"
+                  className="w-full h-full object-cover shadow-2xl rounded-md border-4 border-white/20 dark:border-gray-400/20"
                 />
               </div>
             </div>

@@ -20,10 +20,12 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <div className="min-h-full">
+    <div className="min-h-full ">
       <Disclosure
         as="nav"
-        className="shadow-2xl py-1 border-b border-blue-600/30 dark:border-gray-700 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700"
+        className=" shadow-2xl py-1 border-b border-blue-600/30 
+  dark:border-gray-700 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 
+  dark:from-gray-900 dark:via-gray-800 dark:to-gray-700"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
@@ -54,13 +56,21 @@ export default function Navbar() {
                   })}
                 </div>
               </div>
-              <ThemeToggle />
+              <div className="pr-6 ">
+                <ThemeToggle />
+              </div>
             </div>
 
             <div className="flex md:hidden">
               <DisclosureButton className="inline-flex items-center justify-center rounded-lg bg-blue-900/60 dark:bg-gray-800/60 p-2 text-blue-100 dark:text-gray-200 hover:bg-blue-700 dark:hover:bg-gray-700 hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-blue-800 dark:focus:ring-offset-gray-800 backdrop-blur-sm border border-blue-400/30 dark:border-gray-600/30">
-                <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
-                <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
+                <Bars3Icon
+                  aria-hidden="true"
+                  className="block size-6 group-data-open:hidden"
+                />
+                <XMarkIcon
+                  aria-hidden="true"
+                  className="hidden size-6 group-data-open:block"
+                />
               </DisclosureButton>
             </div>
           </div>

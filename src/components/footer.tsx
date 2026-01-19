@@ -14,7 +14,7 @@ export default function FooterWeb() {
             </p>
             <div className="flex space-x-4 mt-6">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/daffa954"
                 className="text-blue-100 dark:text-gray-300 hover:text-white dark:hover:text-white transition-colors duration-200 p-2 hover:bg-white/10 dark:hover:bg-gray-300/10 rounded-lg"
                 aria-label="GitHub"
               >
@@ -23,7 +23,8 @@ export default function FooterWeb() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://linkedin.com/in/daffa-khoirul-faiz-326a99255"
+               
                 className="text-blue-100 dark:text-gray-300 hover:text-white dark:hover:text-white transition-colors duration-200 p-2 hover:bg-white/10 dark:hover:bg-gray-300/10 rounded-lg"
                 aria-label="LinkedIn"
               >
