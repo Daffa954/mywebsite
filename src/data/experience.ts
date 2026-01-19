@@ -216,25 +216,39 @@ export const projects = [
     images: [echolearn2],
   },
   {
-    id: "mealplanner", // ✅ HARUS string, bukan number
+    id: "mealplanner",
     title: "Meal Planner",
+    category: "Full Stack", // atau "Web App"
+    
+    // Description: Singkat, menjelaskan solusi AI untuk orang tua
     description:
-      "Clicker game is a project website for my college final project web development course",
-    fullDescription: "Detailed description of the Clicker Game project...",
-    techStack: ["Laravel", "Tailwind CSS"],
-    image: mealplanner1, // atau path ke gambar actual
-    url: "https://github.com/yourusername/clicker-game",
-    demoUrl: "https://clicker-game-demo.vercel.app",
-    category: "Website",
+      "A group project web application designed to help parents find healthy meal ideas for children (1-12 years). It uses DeepSeek AI to generate personalized recipes based on ingredients, allergies, and child biometrics.",
+    
+    // Full Description: Menjelaskan Logika AI & Peran Kamu
+    fullDescription: 
+      "Meal Planner is a web-based solution addressing the daily struggle of mothers in finding suitable recipes for their children. The app takes detailed inputs such as the child's age, height, weight, allergies, and current city to generate nutritionally appropriate meal plans.\n\n**My Core Responsibility:** I led the Full-Stack development of the AI Recipe Generator feature using **React** and **Express (TypeScript)**. I integrated the **DeepSeek API** to process user data. The system logic allows users to input available ingredients for specific recommendations; if no ingredients are provided, the AI suggests local dishes based on the user's city.\n\nOne of the biggest technical hurdles was ensuring the AI returned data in a valid JSON format. I implemented robust prompt engineering and backend parsing logic to handle inconsistent API responses, ensuring the frontend always receives structured recipe data.",
+    
+    // Tech Stack: Diperbaiki sesuai deskripsi (React, Express, DeepSeek)
+    techStack: ["React", "TypeScript", "Express.js", "DeepSeek API", "Tailwind CSS"],
+    
+    image: mealplanner1, 
+    url: "https://github.com/yourusername/mealplanner-repo", 
+    demoUrl: "", // Isi jika ada
+    
     features: [
-      "Real-time click counter with animations",
-      "Upgrade system with various power-ups",
-      "Responsive design for all devices",
+      "AI-Powered Recipe Generator (DeepSeek Integration)",
+      "Nutritional Personalization (Based on Age, Height, Weight)",
+      "Smart Pantry Search (Generate based on available ingredients)",
+      "Location-Based Recommendations (Fallback logic)",
+      "Allergy & Meal Type Filtering"
     ],
+    
     challenges: [
-      "Implementing smooth animations for click feedback",
-      "Managing complex state for upgrades and power-ups",
+      "First-time integration of a Large Language Model (LLM) into a web app",
+      "Handling non-deterministic AI responses (Prompt Engineering to force valid JSON outputs)",
+      " designing a backend structure to bridge the React frontend with the DeepSeek API securely"
     ],
+    
     images: [
       mealplanner1_1,
       mealplanner2,
@@ -245,7 +259,7 @@ export const projects = [
       mealplanner7,
       mealplanner8,
     ],
-  },
+},
 
   {
     id: "ucmarketplace", // ✅ HARUS string, bukan number
