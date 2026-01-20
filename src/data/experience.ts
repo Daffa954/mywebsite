@@ -97,13 +97,13 @@ export const organizationExperiences = [
       "Guided new students during Orientation Week to help them adapt to university life.",
     ],
   },
-  {
-    period: "Sep 2024 - June 2025",
-    type: "Organization",
-    position: "Student Mentor",
-    company: "Mentoring Department Universitas Ciputra Surabaya",
-    responsibilities: ["Membantu mahasiswa baru "],
-  },
+  // {
+  //   period: "Sep 2024 - June 2025",
+  //   type: "Organization",
+  //   position: "Student Mentor",
+  //   company: "Mentoring Department Universitas Ciputra Surabaya",
+  //   responsibilities: ["Membantu mahasiswa baru "],
+  // },
 ];
 export const projects = [
   {
@@ -261,80 +261,80 @@ export const projects = [
     ],
 },
 
-  {
-    id: "ucmarketplace", // ✅ HARUS string, bukan number
-    title: "UC Marketplace",
-    description:
-      "Clicker game is a project website for my college final project web development course",
-    fullDescription: "Detailed description of the Clicker Game project...",
-    techStack: ["Laravel", "Tailwind CSS"],
-    image: ucmarketplace1, // atau path ke gambar actual
-    url: "https://github.com/yourusername/clicker-game",
-    demoUrl: "https://clicker-game-demo.vercel.app",
-    category: "Android/IOS/Multi Platform",
-    features: [
-      "Real-time click counter with animations",
-      "Upgrade system with various power-ups",
-      "Responsive design for all devices",
-    ],
-    challenges: [
-      "Implementing smooth animations for click feedback",
-      "Managing complex state for upgrades and power-ups",
-    ],
-    images: [ucmarketplace2, ucmarketplace3, ucmarketplace4],
-  },
+  // {
+  //   id: "ucmarketplace", // ✅ HARUS string, bukan number
+  //   title: "UC Marketplace",
+  //   description:
+  //     "Clicker game is a project website for my college final project web development course",
+  //   fullDescription: "Detailed description of the Clicker Game project...",
+  //   techStack: ["Laravel", "Tailwind CSS"],
+  //   image: ucmarketplace1, // atau path ke gambar actual
+  //   url: "https://github.com/yourusername/clicker-game",
+  //   demoUrl: "https://clicker-game-demo.vercel.app",
+  //   category: "Android/IOS/Multi Platform",
+  //   features: [
+  //     "Real-time click counter with animations",
+  //     "Upgrade system with various power-ups",
+  //     "Responsive design for all devices",
+  //   ],
+  //   challenges: [
+  //     "Implementing smooth animations for click feedback",
+  //     "Managing complex state for upgrades and power-ups",
+  //   ],
+  //   images: [ucmarketplace2, ucmarketplace3, ucmarketplace4],
+  // },
 
-  {
-    id: "financehub", // ✅ HARUS string, bukan number
-    title: "Finance Hub",
-    description:
-      "Clicker game is a project website for my college final project web development course",
-    fullDescription: "Detailed description of the Clicker Game project...",
-    techStack: ["Laravel", "Tailwind CSS"],
-    image: financehub1, // atau path ke gambar actual
-    url: "https://github.com/yourusername/clicker-game",
-    demoUrl: "https://clicker-game-demo.vercel.app",
-    category: "Website",
-    features: [
-      "Real-time click counter with animations",
-      "Upgrade system with various power-ups",
-      "Responsive design for all devices",
-    ],
-    challenges: [
-      "Implementing smooth animations for click feedback",
-      "Managing complex state for upgrades and power-ups",
-    ],
-    images: [
-      financehub0,
-      financehub2,
-      financehub3,
-      financehub4,
-      financehub5,
-      financehub6,
-      financehub7,
-    ],
-  },
-  {
-    id: "wasteapp", // ✅ HARUS string, bukan number
-    title: "Waste Classifier App",
-    description:
-      "Clicker game is a project website for my college final project web development course",
-    fullDescription: "Detailed description of the Clicker Game project...",
-    techStack: ["Laravel", "Tailwind CSS"],
-    image: wasteapp1, // atau path ke gambar actual
-    url: "https://github.com/yourusername/clicker-game",
-    demoUrl: "https://clicker-game-demo.vercel.app",
-    category: "Android/IOS/Multi Platform",
-    features: [
-      "Real-time click counter with animations",
-      "Upgrade system with various power-ups",
-      "Responsive design for all devices",
-    ],
-    challenges: [
-      "Implementing smooth animations for click feedback",
-      "Managing complex state for upgrades and power-ups",
-    ],
-    images: [wasteapp2],
-  },
+  // {
+  //   id: "financehub", // ✅ HARUS string, bukan number
+  //   title: "Finance Hub",
+  //   description:
+  //     "Clicker game is a project website for my college final project web development course",
+  //   fullDescription: "Detailed description of the Clicker Game project...",
+  //   techStack: ["Laravel", "Tailwind CSS"],
+  //   image: financehub1, // atau path ke gambar actual
+  //   url: "https://github.com/yourusername/clicker-game",
+  //   demoUrl: "https://clicker-game-demo.vercel.app",
+  //   category: "Website",
+  //   features: [
+  //     "Real-time click counter with animations",
+  //     "Upgrade system with various power-ups",
+  //     "Responsive design for all devices",
+  //   ],
+  //   challenges: [
+  //     "Implementing smooth animations for click feedback",
+  //     "Managing complex state for upgrades and power-ups",
+  //   ],
+  //   images: [
+  //     financehub0,
+  //     financehub2,
+  //     financehub3,
+  //     financehub4,
+  //     financehub5,
+  //     financehub6,
+  //     financehub7,
+  //   ],
+  // },
+  // {
+  //   id: "wasteapp", // ✅ HARUS string, bukan number
+  //   title: "Waste Classifier App",
+  //   description:
+  //     "Clicker game is a project website for my college final project web development course",
+  //   fullDescription: "Detailed description of the Clicker Game project...",
+  //   techStack: ["Laravel", "Tailwind CSS"],
+  //   image: wasteapp1, // atau path ke gambar actual
+  //   url: "https://github.com/yourusername/clicker-game",
+  //   demoUrl: "https://clicker-game-demo.vercel.app",
+  //   category: "Android/IOS/Multi Platform",
+  //   features: [
+  //     "Real-time click counter with animations",
+  //     "Upgrade system with various power-ups",
+  //     "Responsive design for all devices",
+  //   ],
+  //   challenges: [
+  //     "Implementing smooth animations for click feedback",
+  //     "Managing complex state for upgrades and power-ups",
+  //   ],
+  //   images: [wasteapp2],
+  // },
   // ... tambahkan projects lain dengan struktur yang sama
 ];

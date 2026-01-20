@@ -152,7 +152,7 @@ export function Home() {
 
             <div className="text-center">
               <a
-                href="/myprojects"
+                href="/mywebsite/myprojects"
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 dark:hover:from-blue-800 dark:hover:to-blue-900 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 View All Projects
