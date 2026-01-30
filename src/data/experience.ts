@@ -91,19 +91,25 @@ export const organizationExperiences = [
   {
     period: "Aug 2024 - Sep 2024",
     type: "Organization",
-    position: "Advice and Mentoring Department Committee",
+    position: "Mentor - Advice & Mentoring Division", // Nama divisi diperjelas
     company: "Orientation Week Universitas Ciputra Surabaya",
     responsibilities: [
-      "Guided new students during Orientation Week to help them adapt to university life.",
+      "Mentored a group of 10 incoming freshmen throughout the one-week intensive orientation program.",
+      "Facilitated the adaptation process by introducing campus culture, academic systems, and university life to new students.",
+      "Evaluated and provided constructive feedback on students' daily assignments and group projects.",
     ],
   },
-  // {
-  //   period: "Sep 2024 - June 2025",
-  //   type: "Organization",
-  //   position: "Student Mentor",
-  //   company: "Mentoring Department Universitas Ciputra Surabaya",
-  //   responsibilities: ["Membantu mahasiswa baru "],
-  // },
+  {
+    period: "Sep 2024 - June 2025",
+    type: "Organization",
+    position: "Student Mentor",
+    company: "Mentoring Department Universitas Ciputra Surabaya",
+    responsibilities: [
+      "Guided first-year students through their transition to university life, ensuring a smooth academic and social adaptation.",
+      "Delivered structured soft-skill modules including Stress Management, Healthy Lifestyle, and Personal Finance.",
+      "Conducted regular sharing sessions to listen to students' concerns and provided constructive advice to help them overcome challenges.",
+    ],
+  },
 ];
 export const projects = [
   {
@@ -121,8 +127,7 @@ export const projects = [
 
     techStack: ["Laravel", "Tailwind CSS", "MySQL"],
     image: absenku1,
-    url: "https://github.com/yourusername/absenku-repo", // Pastikan link repo benar
-    demoUrl: "https://absenku-demo.vercel.app", // Jika ada
+    url: "https://github.com/elvernh/Absenku", // Pastikan link repo benar
 
     // Features: Diperbaiki sesuai konteks Absenku (bukan Clicker Game lagi)
     features: [
@@ -156,8 +161,7 @@ export const projects = [
 
     techStack: ["Swift", "SwiftUI", "CoreML", "DeepSeek API", "AVFoundation"],
     image: mindly1,
-    url: "https://github.com/yourusername/mindly-ios",
-    demoUrl: "",
+    url: "https://github.com/Daffa954/ALP_Jevon_Carry_MAD",
 
     features: [
       "AI-Powered Anxiety Assessment (PHQ-9)",
@@ -197,7 +201,10 @@ export const projects = [
     ],
 
     image: echolearn1,
-    url: "https://github.com/yourusername/echolearn-repo",
+    url: {
+      Front_end: "https://github.com/yohanajocelyn/EchoLearn",
+      "Back-end": "https://github.com/yohanajocelyn/EchoLearnBackend",
+    },
     demoUrl: "",
 
     features: [
@@ -210,7 +217,6 @@ export const projects = [
     challenges: [
       "Implementing accurate string matching logic to handle variations in user speech-to-text results",
       "Establishing a seamless connection between Jetpack Compose and the Express.js backend",
-      "Coordinating full-stack tasks effectively in a compact 2-person team",
     ],
 
     images: [echolearn2],
@@ -219,36 +225,44 @@ export const projects = [
     id: "mealplanner",
     title: "Meal Planner",
     category: "Full Stack", // atau "Web App"
-    
+
     // Description: Singkat, menjelaskan solusi AI untuk orang tua
     description:
       "A group project web application designed to help parents find healthy meal ideas for children (1-12 years). It uses DeepSeek AI to generate personalized recipes based on ingredients, allergies, and child biometrics.",
-    
+
     // Full Description: Menjelaskan Logika AI & Peran Kamu
-    fullDescription: 
+    fullDescription:
       "Meal Planner is a web-based solution addressing the daily struggle of mothers in finding suitable recipes for their children. The app takes detailed inputs such as the child's age, height, weight, allergies, and current city to generate nutritionally appropriate meal plans.\n\n**My Core Responsibility:** I led the Full-Stack development of the AI Recipe Generator feature using **React** and **Express (TypeScript)**. I integrated the **DeepSeek API** to process user data. The system logic allows users to input available ingredients for specific recommendations; if no ingredients are provided, the AI suggests local dishes based on the user's city.\n\nOne of the biggest technical hurdles was ensuring the AI returned data in a valid JSON format. I implemented robust prompt engineering and backend parsing logic to handle inconsistent API responses, ensuring the frontend always receives structured recipe data.",
-    
+
     // Tech Stack: Diperbaiki sesuai deskripsi (React, Express, DeepSeek)
-    techStack: ["React", "TypeScript", "Express.js", "DeepSeek API", "Tailwind CSS"],
-    
-    image: mealplanner1, 
-    url: "https://github.com/yourusername/mealplanner-repo", 
-    demoUrl: "", // Isi jika ada
-    
+    techStack: [
+      "React",
+      "TypeScript",
+      "Express.js",
+      "DeepSeek API",
+      "Tailwind CSS",
+    ],
+
+    image: mealplanner1,
+    url: {
+      Front_end: "https://github.com/Daffa954/mealPlanner-backend",
+      "Back-end": "https://github.com/Daffa954/mealPlanner-frontend",
+    },
+
     features: [
       "AI-Powered Recipe Generator (DeepSeek Integration)",
       "Nutritional Personalization (Based on Age, Height, Weight)",
       "Smart Pantry Search (Generate based on available ingredients)",
       "Location-Based Recommendations (Fallback logic)",
-      "Allergy & Meal Type Filtering"
+      "Allergy & Meal Type Filtering",
     ],
-    
+
     challenges: [
       "First-time integration of a Large Language Model (LLM) into a web app",
       "Handling non-deterministic AI responses (Prompt Engineering to force valid JSON outputs)",
-      " designing a backend structure to bridge the React frontend with the DeepSeek API securely"
+      " designing a backend structure to bridge the React frontend with the DeepSeek API securely",
     ],
-    
+
     images: [
       mealplanner1_1,
       mealplanner2,
@@ -259,82 +273,133 @@ export const projects = [
       mealplanner7,
       mealplanner8,
     ],
-},
+  },
 
-  // {
-  //   id: "ucmarketplace", // ✅ HARUS string, bukan number
-  //   title: "UC Marketplace",
-  //   description:
-  //     "Clicker game is a project website for my college final project web development course",
-  //   fullDescription: "Detailed description of the Clicker Game project...",
-  //   techStack: ["Laravel", "Tailwind CSS"],
-  //   image: ucmarketplace1, // atau path ke gambar actual
-  //   url: "https://github.com/yourusername/clicker-game",
-  //   demoUrl: "https://clicker-game-demo.vercel.app",
-  //   category: "Android/IOS/Multi Platform",
-  //   features: [
-  //     "Real-time click counter with animations",
-  //     "Upgrade system with various power-ups",
-  //     "Responsive design for all devices",
-  //   ],
-  //   challenges: [
-  //     "Implementing smooth animations for click feedback",
-  //     "Managing complex state for upgrades and power-ups",
-  //   ],
-  //   images: [ucmarketplace2, ucmarketplace3, ucmarketplace4],
-  // },
+  {
+    id: "ucmarketplace",
+    title: "UC Marketplace",
+    category: "Mobile App", // Sesuaikan jika ini Flutter/React Native
 
-  // {
-  //   id: "financehub", // ✅ HARUS string, bukan number
-  //   title: "Finance Hub",
-  //   description:
-  //     "Clicker game is a project website for my college final project web development course",
-  //   fullDescription: "Detailed description of the Clicker Game project...",
-  //   techStack: ["Laravel", "Tailwind CSS"],
-  //   image: financehub1, // atau path ke gambar actual
-  //   url: "https://github.com/yourusername/clicker-game",
-  //   demoUrl: "https://clicker-game-demo.vercel.app",
-  //   category: "Website",
-  //   features: [
-  //     "Real-time click counter with animations",
-  //     "Upgrade system with various power-ups",
-  //     "Responsive design for all devices",
-  //   ],
-  //   challenges: [
-  //     "Implementing smooth animations for click feedback",
-  //     "Managing complex state for upgrades and power-ups",
-  //   ],
-  //   images: [
-  //     financehub0,
-  //     financehub2,
-  //     financehub3,
-  //     financehub4,
-  //     financehub5,
-  //     financehub6,
-  //     financehub7,
-  //   ],
-  // },
-  // {
-  //   id: "wasteapp", // ✅ HARUS string, bukan number
-  //   title: "Waste Classifier App",
-  //   description:
-  //     "Clicker game is a project website for my college final project web development course",
-  //   fullDescription: "Detailed description of the Clicker Game project...",
-  //   techStack: ["Laravel", "Tailwind CSS"],
-  //   image: wasteapp1, // atau path ke gambar actual
-  //   url: "https://github.com/yourusername/clicker-game",
-  //   demoUrl: "https://clicker-game-demo.vercel.app",
-  //   category: "Android/IOS/Multi Platform",
-  //   features: [
-  //     "Real-time click counter with animations",
-  //     "Upgrade system with various power-ups",
-  //     "Responsive design for all devices",
-  //   ],
-  //   challenges: [
-  //     "Implementing smooth animations for click feedback",
-  //     "Managing complex state for upgrades and power-ups",
-  //   ],
-  //   images: [wasteapp2],
-  // },
+    // Description: Fokus pada solusi masalah PO mahasiswa
+    description:
+      "A centralized marketplace app designed for Universitas Ciputra students to manage Food & Beverage Pre-Orders (PO). It solves the chaos of manual ordering by providing detailed pickup locations, real-time order tracking, and integrated digital payments.",
+
+    // Full Description: Masalah -> Solusi -> Peran Kamu
+    fullDescription:
+      "UC Marketplace was developed to streamline the chaotic Pre-Order (PO) culture at Universitas Ciputra. Previously, buyers struggled with unclear pickup locations and untrackable orders, while sellers were overwhelmed by manual bank transfer checks and managing multiple PO batches.\n\n**My Core Responsibilities:**\nI was responsible for the **Payment System Integration** using **Midtrans Gateway**. My task was to ensure payment statuses (Pending, Success, Failed) were perfectly synchronized between Buyer and Seller in real-time. I also developed the **Seller Order Management** module, allowing sellers to process incoming orders efficiently.\n\nAdditionally, I attempted to build a 'Nearest PO' search feature using geolocation logic (Long/Lat), though it remains a prototype due to complex distance calculation challenges.",
+
+    // Tech Stack: Saya tambahkan Midtrans & Google Maps (jika pakai maps)
+    techStack: [
+      "Flutter",
+
+      "Midtrans Payment Gateway",
+      "Open Street Maps API",
+      "MySQL",
+    ],
+
+    image: ucmarketplace1,
+    url: "https://github.com/Daffa954/uc_marketplace",
+
+    features: [
+      "Integrated Payment Gateway (Midtrans with QRIS Simulator)",
+      "Multi-Tenant Seller Dashboard (Manage Multiple POs)",
+      "Real-Time Order Status Tracking",
+      "Detailed Pickup Location (Maps & Photo Evidence)",
+      "In-App Chat between Buyer and Seller",
+    ],
+
+    challenges: [
+      "Integrating Midtrans Sandbox environment and handling QR Code string simulation for testing payments",
+      "Synchronizing payment status callbacks (Webhooks) between the payment provider and our database",
+      "Implementing complex geolocation logic to sort tenants by nearest distance (Radius Search)",
+    ],
+
+    images: [ucmarketplace2, ucmarketplace3, ucmarketplace4],
+  },
+
+  {
+    id: "financehub",
+    title: "Finance Hub",
+    category: "Full Stack", // atau "Web App"
+
+    // Description: Singkat, padat, menonjolkan fitur unik (Activity-based & AI)
+    description:
+      "A smart financial management platform built with Laravel that uses a hybrid AI approach to analyze user spending habits. It distinguishes between daily expenses and specific activity-based costs (e.g., group projects) to provide context-aware financial health assessments.",
+
+    // Full Description: Menjelaskan arsitektur "Hybrid AI" yang kamu buat di Controller
+    fullDescription:
+      "Finance Hub goes beyond simple expense tracking by introducing 'Activity-Based Costing' for personal finance. Users can link expenses to specific activities (like 'Work Trip' or 'Group Project'), preventing these one-time costs from skewing their daily spending analytics.\n\n**My Core Contribution:** I architected the **AI Analysis Engine** using a hybrid approach to solve the common 'LLM Math Hallucination' problem. Instead of sending raw data to DeepSeek AI and asking it to calculate totals (which consumes high tokens and is prone to errors), I built a robust **PHP Pre-computation Layer** in the `ReportController`.\n\nThis layer handles all heavy mathematical operations—calculating balance sheets, savings rates, identifying top spending categories, detecting financial anomalies (wasteful dates), and trend analysis—before sending a condensed, high-context summary to the AI. The AI then focuses solely on providing qualitative insights and financial health status (Safe/Warning/Danger) based on the user's job, location, and spending behavior.",
+
+    // Tech Stack: Laravel + DeepSeek + Tailwind
+    techStack: ["Laravel", "DeepSeek AI", "MySQL", "Tailwind CSS", "PHP"],
+
+    image: financehub1,
+    url: "https://github.com/Daffa954/alp-cc",
+    demoUrl: "https://khufra.my.id/",
+
+    features: [
+      "Hybrid AI Analysis (PHP Calculation + DeepSeek Reasoning)",
+      "Activity-Based Expense Tracking (Separating Daily vs Event Costs)",
+      "Automated Anomaly Detection (Identifies Wasteful Days)",
+      "Context-Aware Financial Health Scoring (Safe/Warning/Danger)",
+      "Income Profile Analysis (Stable vs Freelance)",
+    ],
+
+    challenges: [
+      "Mitigating AI 'Math Hallucinations' by offloading all calculations to a custom PHP logic layer",
+      "Optimizing Token Usage: designing a compact JSON payload that provides maximum context with minimum tokens",
+      "Engineering a prompt structure that forces the LLM to return valid, consistent JSON for the financial health status",
+      "Handling complex data relationships between Incomes, Expenses, and Activities for accurate reporting",
+    ],
+
+    images: [
+      financehub0,
+      financehub2,
+      financehub3,
+      financehub4,
+      financehub5,
+      financehub6,
+      financehub7,
+    ],
+  },
+  {
+    id: "wasteapp",
+    title: "Waste Classifier App",
+    category: "Mobile App (AI)",
+
+    // Description: Singkat & Padat
+    description:
+      "An educational mobile app built with Flutter that uses Image Classification to identify 6 types of waste (Plastic, Glass, Metal, etc.). It integrates with Google Gemini API to provide eco-facts and recycling guides.",
+
+    // Full Description: Menjelaskan Alur App & Peran Teknis Kamu
+    fullDescription:
+      "Waste Classifier is a group project designed to educate users about waste management. By simply taking a photo, the app classifies waste into 6 categories (Plastic, Glass, Textile, Metal, Paper, Organic) and uses the Google Gemini API to display 'Fun Facts' (e.g., decomposition time) and specific recycling steps.\n\n**My Core Responsibility:** I acted as the **Machine Learning Engineer**. I was responsible for the end-to-end model development using Teachable Machine. This involved curating and merging datasets from various sources to prevent underfitting/overfitting. I performed iterative **Hyperparameter Tuning** (adjusting Epochs, Learning Rate, and Batch Size) to optimize the model.\n\nTo ensure reliability, I validated the model using Python to generate a **Confusion Matrix**, achieving an accuracy score above 70% for all classes. I also handled the logic for interpreting Teachable Machine's output array, specifically managing confidence scores and index-based label mapping.",
+
+    // Tech Stack: Flutter + TM + Gemini
+    techStack: [
+      "Flutter",
+      "Teachable Machine (TFLite)",
+      "Google Gemini API",
+      "Python (for Validation)",
+    ],
+
+    image: wasteapp1,
+    url: "https://github.com/FiuJ/alp_ai/tree/main/alp_ai",
+
+    features: [
+      "Real-time Image Classification (6 Waste Classes)",
+      "AI-Generated Educational Content (Gemini API)",
+      "Recycling Guidelines & Eco-Facts",
+      "Confidence Score Analysis Logic",
+    ],
+
+    challenges: [
+      "Curating a balanced dataset by merging multiple sources to ensure high accuracy across all 6 classes",
+      "Iterative Hyperparameter Tuning (Epochs, Batch Size, LR) to achieve >70% precision in the Confusion Matrix",
+      "Implementing logic to parse Teachable Machine's probability array and handle tie-breaking for similar confidence scores",
+    ],
+
+    images: [wasteapp2],
+  },
   // ... tambahkan projects lain dengan struktur yang sama
 ];

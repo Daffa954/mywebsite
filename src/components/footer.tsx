@@ -33,7 +33,7 @@ export default function FooterWeb() {
                 </svg>
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:dkhoirul05@gmail.com"
                 className="text-blue-100 dark:text-gray-300 hover:text-white dark:hover:text-white transition-colors duration-200 p-2 hover:bg-white/10 dark:hover:bg-gray-300/10 rounded-lg"
                 aria-label="Email"
               >
@@ -92,10 +92,10 @@ export default function FooterWeb() {
         {/* Bottom Section */}
         <div className="border-t border-blue-600/30 dark:border-gray-700 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <span className="text-blue-100 dark:text-gray-400 text-base mb-4 sm:mb-0">
-            © 2025 <span className="text-white font-semibold">DKF Web</span>. All rights reserved.
+            © 2026 <span className="text-white font-semibold">DKF Web</span>. All rights reserved.
           </span>
           <div className="text-blue-100 dark:text-gray-400 text-base">
-            Handcrafted with <span className="text-red-400">❤</span> by Daffa
+            Handcrafted with  by Daffa
           </div>
         </div>
       </div>
