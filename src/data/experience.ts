@@ -224,7 +224,7 @@ export const projects = [
   {
     id: "mealplanner",
     title: "Meal Planner",
-    category: "Full Stack", // atau "Web App"
+    category: "Website", // atau "Web App"
 
     // Description: Singkat, menjelaskan solusi AI untuk orang tua
     description:
@@ -278,7 +278,7 @@ export const projects = [
   {
     id: "ucmarketplace",
     title: "UC Marketplace",
-    category: "Mobile App", // Sesuaikan jika ini Flutter/React Native
+    category: "Android/IOS", // Sesuaikan jika ini Flutter/React Native
 
     // Description: Fokus pada solusi masalah PO mahasiswa
     description:
@@ -320,7 +320,7 @@ export const projects = [
   {
     id: "financehub",
     title: "Finance Hub",
-    category: "Full Stack", // atau "Web App"
+    category: "Website", // atau "Web App"
 
     // Description: Singkat, padat, menonjolkan fitur unik (Activity-based & AI)
     description:
@@ -365,7 +365,7 @@ export const projects = [
   {
     id: "wasteapp",
     title: "Waste Classifier App",
-    category: "Mobile App (AI)",
+    category: "Android/IOS",
 
     // Description: Singkat & Padat
     description:
