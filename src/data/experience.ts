@@ -41,21 +41,36 @@ import wasteapp2 from "../assets/projects/wasteapp/wasteapp2.png";
 
 export const workExperiences = [
   {
-    period: "Aug 2024 - Sep 2024",
+    period: "Feb 2026 - Now",
     type: "Part Time",
-    position: "Algorithm and Programming Course Student Assistant",
+    position: "Advance Programming Course Student Assistant",
     company: "Universitas Ciputra Surabaya• Surabaya",
     responsibilities: [
-      "Assisting students in understanding fundamental concepts of algorithms and basic programming using Java through material explanation, practical session guidance, and support in completing assignments",
+      "Mentored students throughout the learning process to ensure a deep understanding of advanced programming paradigms especially in Object Oriented Programming paradigm",
+      "Evaluated and graded complex coding assignments and projects, providing detailed code reviews to improve efficiency and maintainability",
+      "Delivered hands-on practical guidance and advanced troubleshooting assistance using Java.",
     ],
   },
   {
-    period: "Feb 2025 - Sep 2025",
+    period: "Feb 2025 - Sep 2025 & Feb 2026 - Now",
     type: "Part Time",
     position: "Web Programming Course Student Assistant",
     company: "Universitas Ciputra Surabaya• Surabaya",
     responsibilities: [
-      "Assisting students in basic web programming and web design using modern web development tools and technologies, including HTML, CSS, Tailwind, javascript, and PHP.",
+      "Supported students throughout the learning process to ensure a clear understanding of web development concepts",
+      "Graded assignments and provided constructive feedback on their code.",
+      "Provided practical guidance in understanding fundamental web development using HTML, CSS, Tailwind, JavaScript, jQuery, and PHP.",
+    ],
+  },
+  {
+    period: "Sep 2024 - Jan 2025 & Sep 2025 - Jan 2026",
+    type: "Part Time",
+    position: "Basic Algorithm and Programming Course Student Assistant",
+    company: "Universitas Ciputra Surabaya• Surabaya",
+    responsibilities: [
+      "Mentored students throughout the learning process to ensure a solid grasp of core programming principles.",
+      "Evaluated and graded assignments accurately, delivering constructive feedback to improve student performance.",
+      "Delivered hands-on practical guidance and troubleshooting assistance in applying fundamental concepts using Java.",
     ],
   },
   {
@@ -64,30 +79,15 @@ export const workExperiences = [
     position: "Database Course Student Assistant",
     company: "Universitas Ciputra Surabaya• Surabaya",
     responsibilities: [
-      "Assisting students understand relational database fundamentals, SQL, ERD modeling, and the use of database management tools.",
-    ],
-  },
-  {
-    period: "Sep 2025 - Jan 2026",
-    type: "Part Time",
-    position: "Algorithm and Programming Course Student Assistant",
-    company: "Universitas Ciputra Surabaya• Surabaya",
-    responsibilities: [
-      "Assisting students in understanding fundamental concepts of algorithms and basic programming using Java through material explanation, practical session guidance, and support in completing assignments",
+      "Supported students during the learning process to ensure comprehension of database materials.",
+      "Graded assignments and provided constructive feedback on their queries and database designs.",
+      "Provided practical guidance in understanding fundamental relational database concepts using MySQL.",
     ],
   },
 ];
 
 export const organizationExperiences = [
-  {
-    period: "Mar 2024 - April 2024",
-    type: "Organization",
-    position: "Guest Relation Officer Committee",
-    company: "Universitas Ciputra Surabaya Awarding Night 2024",
-    responsibilities: [
-      "Orchestrated guest logistics by designing seating layouts and managing the on-site registration process to ensure a seamless event experience.",
-    ],
-  },
+ 
   {
     period: "Aug 2024 - Sep 2024",
     type: "Organization",
