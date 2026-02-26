@@ -7,9 +7,13 @@ interface ProjectProps {
   title: string;
   description: string;
   id: string;
-  // ✅ UPDATE: Izinkan string, array, atau object
   url: string | string[] | { [key: string]: string };
   category?: string;
+  
+  // ✅ UPDATE: Tambahkan Role dan Year
+  role?: string;
+  yearAccomplished?: string;
+  
   image: React.ReactNode;
   children?: React.ReactNode;
 }
@@ -20,6 +24,8 @@ export function Project({
   id, 
   url, 
   category,
+  role,               // ✅ Destructure role
+  yearAccomplished,   // ✅ Destructure year
   image, 
   children 
 }: ProjectProps) {
@@ -28,7 +34,6 @@ export function Project({
   const renderCodeButtons = () => {
     
     // KASUS 1: URL adalah Object (Key-Value pair)
-    // Contoh: { "Front End": "...", "Back End": "..." }
     if (typeof url === 'object' && !Array.isArray(url) && url !== null) {
       return Object.entries(url).map(([key, link], index) => (
         <a
@@ -44,12 +49,11 @@ export function Project({
           <span className="hidden sm:inline">
             {key.replace(/_/g, ' ').replace(/-/g, ' ')}
           </span>
-          {/* Untuk layar sangat kecil, tampilkan inisial atau ikon saja bisa diatur disini, tapi default hidden sm:inline sudah oke */}
         </a>
       ));
     }
 
-    // KASUS 2: URL adalah Array (lebih dari 1 link, tapi tanpa nama key)
+    // KASUS 2: URL adalah Array
     if (Array.isArray(url)) {
       return url.map((link, index) => (
         <a
@@ -68,7 +72,7 @@ export function Project({
       ));
     }
 
-    // KASUS 3: URL adalah String (Single link)
+    // KASUS 3: URL adalah String
     return (
       <a
         href={url as string}
@@ -116,10 +120,20 @@ export function Project({
       <div className="flex flex-col flex-grow p-6">
         <div className="mb-4">
           <Link to={`/myprojects/${id}`} className="block">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
               {title}
             </h3>
           </Link>
+          
+          {/* ✅ TAMPILAN BARU: Menampilkan Year dan Role di bawah judul dengan font kecil */}
+          {(yearAccomplished || role) && (
+            <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-gray-500 dark:text-gray-400 mb-3">
+              {yearAccomplished && <span>{yearAccomplished}</span>}
+              {yearAccomplished && role && <span>•</span>}
+              {role && <span>{role}</span>}
+            </div>
+          )}
+
           <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed line-clamp-2">
             {description}
           </p>
@@ -135,12 +149,10 @@ export function Project({
         {/* 3. Action Buttons */}
         <div className="mt-auto pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-4 flex-wrap">
           
-          {/* ✅ Wrapper dengan flex-wrap agar kalau tombolnya banyak tidak berantakan */}
           <div className="flex gap-4 flex-wrap">
             {renderCodeButtons()}
           </div>
 
-          {/* View Details Button */}
           <Link
             to={`/myprojects/${id}`}
             className="group/btn inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl text-sm font-bold shadow-lg hover:shadow-xl hover:bg-blue-600 dark:hover:bg-gray-200 transition-all duration-300 ml-auto"

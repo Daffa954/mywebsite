@@ -87,7 +87,6 @@ export const workExperiences = [
 ];
 
 export const organizationExperiences = [
- 
   {
     period: "Aug 2024 - Sep 2024",
     type: "Organization",
@@ -116,7 +115,8 @@ export const projects = [
     id: "absenku",
     title: "Absenku",
     category: "Website", // atau "Web App"
-
+    role: "Frontend and Backend Developer",
+    yearAccomplished: "2024",
     // Description: Singkat, padat, menjelaskan inti masalah & solusi (untuk tampilan Card)
     description:
       "A comprehensive extracurricular management system designed to replace manual Excel workflows. It connects schools with external vendors, automates attendance, and prevents scheduling conflicts during student registration.",
@@ -150,7 +150,8 @@ export const projects = [
     id: "mindly",
     title: "Mindly",
     category: "IOS ",
-
+    role: "Frontend and Backend Developer",
+    yearAccomplished: "2025",
     // Description: Highlight fitur utama + peranmu sedikit
     description:
       "A collaborative iOS mental health project powered by AI. I was responsible for building the CoreML-based journaling system and integrating DeepSeek API for personalized advice.",
@@ -183,7 +184,8 @@ export const projects = [
     id: "echolearn",
     title: "Echolearn",
     category: "Android",
-
+    role: "Frontend and Backend Developer",
+    yearAccomplished: "2024",
     // Description: Tetap highlight kolaborasi & peran
     description:
       "A collaborative Android app for learning English through songs. In this 2-person project, I led the full-stack development of the Speaking feature and handled the API integration.",
@@ -225,7 +227,8 @@ export const projects = [
     id: "mealplanner",
     title: "Meal Planner",
     category: "Website", // atau "Web App"
-
+    role: "Frontend and Backend Developer",
+    yearAccomplished: "2025",
     // Description: Singkat, menjelaskan solusi AI untuk orang tua
     description:
       "A group project web application designed to help parents find healthy meal ideas for children (1-12 years). It uses DeepSeek AI to generate personalized recipes based on ingredients, allergies, and child biometrics.",
@@ -279,7 +282,8 @@ export const projects = [
     id: "ucmarketplace",
     title: "UC Marketplace",
     category: "Android/IOS", // Sesuaikan jika ini Flutter/React Native
-
+    role: "Frontend and Backend Developer",
+    yearAccomplished: "2026",
     // Description: Fokus pada solusi masalah PO mahasiswa
     description:
       "A centralized marketplace app designed for Universitas Ciputra students to manage Food & Beverage Pre-Orders (PO). It solves the chaos of manual ordering by providing detailed pickup locations, real-time order tracking, and integrated digital payments.",
@@ -321,7 +325,8 @@ export const projects = [
     id: "financehub",
     title: "Finance Hub",
     category: "Website", // atau "Web App"
-
+    role: "Frontend Developer and ML Engineer",
+    yearAccomplished: "2026",
     // Description: Singkat, padat, menonjolkan fitur unik (Activity-based & AI)
     description:
       "A smart financial management platform built with Laravel that uses a hybrid AI approach to analyze user spending habits. It distinguishes between daily expenses and specific activity-based costs (e.g., group projects) to provide context-aware financial health assessments.",
@@ -366,7 +371,8 @@ export const projects = [
     id: "wasteapp",
     title: "Waste Classifier App",
     category: "Android/IOS",
-
+    role: "Frontend and Backend Developer",
+    yearAccomplished: "2026",
     // Description: Singkat & Padat
     description:
       "An educational mobile app built with Flutter that uses Image Classification to identify 6 types of waste (Plastic, Glass, Metal, etc.). It integrates with Google Gemini API to provide eco-facts and recycling guides.",

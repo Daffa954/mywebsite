@@ -4,7 +4,9 @@ import {
   CodeBracketIcon, 
   GlobeAltIcon, 
   CheckCircleIcon, 
-  BoltIcon 
+  BoltIcon,
+  UserIcon,       // ✅ Tambahan icon untuk Role
+  CalendarIcon    // ✅ Tambahan icon untuk Year
 } from "@heroicons/react/24/outline";
 import Navbar from "../components/navbar";
 import FooterWeb from "../components/footer";
@@ -12,24 +14,49 @@ import { useEffect, useState } from "react";
 import { projects } from "../data/experience"; 
 import { motion, Variants, AnimatePresence } from "framer-motion";
 
-// 1. UPDATE INTERFACE: url bisa String, Array, atau Object
+// 1. UPDATE INTERFACE: Tambahkan Role dan Year Accomplished
 interface ProjectType {
   id: string; 
   title: string;
   category: string;
+  role?: string;               // ✅ Baru
+  yearAccomplished?: string;   // ✅ Baru
   image: string; 
   images?: string[]; 
   description: string;
   fullDescription?: string;
   techStack: string[];
-  
-  // ✅ PENTING: Definisi tipe data URL yang fleksibel
   url: string | string[] | { [key: string]: string }; 
-  
   demoUrl?: string;
   features?: string[];   
   challenges?: string[]; 
 }
+
+// ✅ Helper untuk membaca \n\n dan **huruf tebal** pada deskripsi
+const renderFormattedText = (text: string) => {
+  return text.split('\n').map((line, index) => {
+    // Jika baris kosong (hasil dari \n\n), buat jarak margin
+    if (line.trim() === '') return <div key={index} className="h-4"></div>;
+    
+    // Pisahkan teks berdasarkan pola **teks tebal**
+    const parts = line.split(/(\*\*.*?\*\*)/g);
+    
+    return (
+      <p key={index} className="mb-2">
+        {parts.map((part, i) => {
+          if (part.startsWith('**') && part.endsWith('**')) {
+            return (
+              <strong key={i} className="text-gray-900 dark:text-white font-bold">
+                {part.slice(2, -2)}
+              </strong>
+            );
+          }
+          return part;
+        })}
+      </p>
+    );
+  });
+};
 
 export function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
@@ -188,12 +215,31 @@ export function ProjectDetail() {
                           </span>
                       </div>
                       
-                      <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
+                      <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
                           {project.title}
                       </h1>
 
+                      {/* ✅ TAMPILAN BARU: ROLE & YEAR */}
+                      {(project.role || project.yearAccomplished) && (
+                        <div className="flex flex-wrap items-center gap-6 mb-6 text-sm sm:text-base text-gray-600 dark:text-gray-400">
+                          {project.role && (
+                            <div className="flex items-center gap-2 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-gray-700">
+                              <UserIcon className="w-5 h-5 text-blue-500" />
+                              <span className="font-semibold">{project.role}</span>
+                            </div>
+                          )}
+                          {project.yearAccomplished && (
+                            <div className="flex items-center gap-2 bg-gray-100 dark:bg-gray-800 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-gray-700">
+                              <CalendarIcon className="w-5 h-5 text-blue-500" />
+                              <span className="font-semibold">{project.yearAccomplished}</span>
+                            </div>
+                          )}
+                        </div>
+                      )}
+
                       <div className="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                          {project.fullDescription || project.description}
+                          {/* ✅ Gunakan Helper Text Formatter */}
+                          {renderFormattedText(project.fullDescription || project.description)}
                       </div>
                   </motion.div>
 

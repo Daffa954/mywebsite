@@ -36,6 +36,8 @@ export function MyProject() {
                 id={String(project.id)} // Pastikan convert ke string
                 url={project.url}
                 category={project.category}
+                role={project.role}
+  yearAccomplished={project.yearAccomplished}
                 image={
                   <img
                     src={project.image}
